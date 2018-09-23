@@ -7,10 +7,10 @@ To play about with the WebAudio api and display a spectrograhic representation o
 
 ### MVP
 - play / pause audio.
-- fourier transform of input.
 - 'rolling' spectrograph of audio.
 
 ### Post MVP
-- WASM module in Rust for fourier transform.
+- switch audio source
+- convert to typescript.
+- WASM module in Rust for fourier transform. ??
 - WebGL for rendering.
-

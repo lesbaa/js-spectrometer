@@ -1,14 +1,16 @@
-# simple-webpack-es7-setup
-A basic webpack setup with babel / es7 support.  
+Js-Spectrometer
+===============
 
-### Overview
-- Entry point is app/app.js
-- Static assets are kept in `app/static` and copied to `dist/static`
+### The idea behind this
 
-### Development
-- `git clone git@github.com:lesbaa/simple-webpack-es7-setup.git`
-- `npm install` / `yarn install`
-- `npm run dev` / `yarn dev`
+To play about with the WebAudio api and display a spectrograhic representation of the audio.
 
-### Building
-- `npm run build`
+### MVP
+- play / pause audio.
+- fourier transform of input.
+- 'rolling' spectrograph of audio.
+
+### Post MVP
+- WASM module in Rust for fourier transform.
+- WebGL for rendering.
+

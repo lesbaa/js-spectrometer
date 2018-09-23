@@ -8,7 +8,7 @@ A basic webpack setup with babel / es7 support.
 ### Development
 - `git clone git@github.com:lesbaa/simple-webpack-es7-setup.git`
 - `npm install` / `yarn install`
-- `npm run dev` / `yarn run dev`
+- `npm run dev` / `yarn dev`
 
 ### Building
 - `npm run build`

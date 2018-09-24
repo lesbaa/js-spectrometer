@@ -6,7 +6,7 @@ Js-Spectrometer
 To play about with the WebAudio api and display a spectrograhic representation of the audio. Tunes courtesy of Radiohead and The Cormorant.
 
 ### MVP
-- 'rolling' spectrograph of audio.
+- 'rolling' spectrograph of audio [√]
 
 ### Post MVP
 - performance, DEATH TO ALL JANK!!

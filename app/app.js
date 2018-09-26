@@ -110,39 +110,10 @@ const {
   parent: document.body,
 })
 
-const createOptionElement = ({ uri, displayName }) => {
-  const option = document.createElement('option')
-  option.value = uri
-  option.innerText = displayName
-  return option
-}
-
-const createSelect = (options) => {
-  const selectElement = document.createElement('select')
-
-  selectElement.className = 'tune-select'
-
-  options
-    .map(createOptionElement)
-    .forEach(el => selectElement.appendChild(el))
-
-  document.body.appendChild(selectElement)
-
-  return selectElement
-}
-
 const tunes = [
-  {
-    uri: '/static/rh.mp3',
-    displayName: 'Idiotheque - Radiohead',
-  },
   {
     uri: '/static/cormorant.mp3',
     displayName: 'Caffeine Shakes (and other tales of sleep deprivation) - The Cormorant',
-  },
-  {
-    uri: '/static/stereo.mp3',
-    displayName: 'Audio Fidelity Stereo Spectacular Demonstration & Sound Effects (1963 - Side 1)',
   },
 ]
 
@@ -150,8 +121,6 @@ async function init() {
   const state = {
     activePlayer: tunes[0].uri,
   }
-
-  const selectElement = createSelect(tunes)
 
   const loadedPlayers = await Promise.all(tunes
     .map(async ({ uri }) =>
@@ -167,13 +136,6 @@ async function init() {
       ...acc,
       [el.uri]: el,
     }), {})
-
-  selectElement.addEventListener('change', async ({ target: { value } }) => {
-    if (players[state.activePlayer]) players[state.activePlayer].stop()
-
-    players[value].play()
-    state.activePlayer = value
-  })
   
   players[state.activePlayer].play()
 }

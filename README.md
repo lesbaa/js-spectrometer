@@ -3,7 +3,9 @@ Js-Spectrometer
 
 ### The idea behind this
 
-To play about with the WebAudio api and display a spectrograhic representation of the audio. Tunes courtesy of Radiohead and The Cormorant. Available [here](https://lesbaa.github.io/lab/spectral/).
+To play about with the WebAudio api and display a spectrograhic representation of the audio. Tunes courtesy of Radiohead and The Cormorant.
+
+Project available [here](https://lesbaa.github.io/lab/spectral/).
 
 ### MVP
 - 'rolling' spectrograph of audio [√]
